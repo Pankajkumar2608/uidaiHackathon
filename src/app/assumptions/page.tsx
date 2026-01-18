@@ -3,9 +3,9 @@ export default function AssumptionsPage() {
         <div className="animate-fade-in max-w-4xl">
             {/* Header */}
             <div className="page-header">
-                <h1 className="page-title">Assumptions & Limitations</h1>
+                <h1 className="page-title">Methodology</h1>
                 <p className="page-subtitle">
-                    Methodology disclosure, data limitations, and compliance statement
+                    Data sources, formulas, and limitations
                 </p>
             </div>
 

@@ -6,6 +6,7 @@ import {
     loadStates,
     Metrics,
     Insight,
+    downloadCSV,
 } from '@/lib/data';
 
 export default function InsightsPage() {
@@ -88,9 +89,9 @@ export default function InsightsPage() {
         <div className="animate-fade-in">
             {/* Header */}
             <div className="page-header">
-                <h1 className="page-title">Actionable Insights Engine</h1>
+                <h1 className="page-title">Strategic Insights</h1>
                 <p className="page-subtitle">
-                    Auto-generated policy recommendations based on computed metrics
+                    Automated policy recommendations based on metrics
                 </p>
             </div>
 
@@ -225,7 +226,10 @@ export default function InsightsPage() {
                     <button className="btn btn-primary">
                         Export as PDF Report
                     </button>
-                    <button className="btn btn-secondary">
+                    <button
+                        className="btn btn-secondary"
+                        onClick={() => downloadCSV(insights, `insights_${selectedState}_${selectedPeriod}.csv`)}
+                    >
                         Export as CSV
                     </button>
                     <button className="btn btn-secondary">

@@ -10,6 +10,7 @@ import {
     DemandProxy,
     parseRegionKey,
     formatPercent,
+    downloadCSV,
 } from '@/lib/data';
 
 export default function Demographics() {
@@ -137,9 +138,9 @@ export default function Demographics() {
         <div className="animate-fade-in">
             {/* Header */}
             <div className="page-header">
-                <h1 className="page-title">Demographics & Infrastructure Demand</h1>
+                <h1 className="page-title">Infrastructure Demand</h1>
                 <p className="page-subtitle">
-                    Demand proxies for school, housing, and transport infrastructure planning
+                    Demand proxies for school, housing, and transport planning
                 </p>
             </div>
 
@@ -283,7 +284,12 @@ export default function Demographics() {
             <div className="card">
                 <div className="card-header">
                     <h2 className="card-title">📋 All Regions ({demandData.length})</h2>
-                    <button className="btn btn-secondary text-sm">Export CSV ↓</button>
+                    <button
+                        className="btn btn-secondary text-sm"
+                        onClick={() => downloadCSV(demandData, `demographics_demand_${selectedPeriod}.csv`)}
+                    >
+                        Export CSV ↓
+                    </button>
                 </div>
                 <DataTable columns={tableColumns} data={demandData} />
             </div>

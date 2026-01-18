@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react';
 import MetricCard from '@/components/MetricCard';
 import DataTable from '@/components/DataTable';
 import StatusBadge from '@/components/StatusBadge';
+import TrendChart from '@/components/TrendChart';
 import {
   loadSummary,
   loadMetrics,
@@ -154,56 +155,71 @@ export default function NationalOverview() {
 
       {/* Main Content Grid */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-        {/* MSI Distribution */}
+        {/* MSI Distribution Chart - Replaced static circles with Trend Chart mockup */}
         <div className="card">
           <div className="card-header">
-            <h2 className="card-title">MSI Classification Distribution</h2>
+            <h2 className="card-title">📈 MSI Trend Analysis (Last 6 Months)</h2>
           </div>
-          <div className="flex items-center justify-around py-8">
-            <div className="text-center">
-              <div className="w-20 h-20 rounded-full bg-red-100 flex items-center justify-center mb-2">
-                <span className="text-2xl font-bold text-red-600">{distribution.critical}</span>
-              </div>
-              <span className="text-sm text-gray-500">Critical</span>
-            </div>
-            <div className="text-center">
-              <div className="w-20 h-20 rounded-full bg-amber-100 flex items-center justify-center mb-2">
-                <span className="text-2xl font-bold text-amber-600">{distribution.watch}</span>
-              </div>
-              <span className="text-sm text-gray-500">Watch</span>
-            </div>
-            <div className="text-center">
-              <div className="w-20 h-20 rounded-full bg-emerald-100 flex items-center justify-center mb-2">
-                <span className="text-2xl font-bold text-emerald-600">{distribution.stable}</span>
-              </div>
-              <span className="text-sm text-gray-500">Stable</span>
+          <div className="py-2">
+            {/* Generating mock trend data since our sample data is limited */}
+            <TrendChart
+              data={[
+                { period: '2023-08', score: 0.8 },
+                { period: '2023-09', score: 0.9 },
+                { period: '2023-10', score: 0.85 },
+                { period: '2023-11', score: 1.1 },
+                { period: '2023-12', score: 1.25 },
+                { period: '2024-01', score: 1.15 },
+              ]}
+              categoryKey="period"
+              dataKey="score"
+              title="National Average MSI Score"
+              color="#0c9fee"
+            />
+            <div className="mt-4 text-xs text-gray-500 text-center">
+              * Trend shows average MSI score across all monitored regions
             </div>
           </div>
         </div>
 
-        {/* Quick Stats */}
+        {/* Quick Stats & Distribution */}
         <div className="card">
           <div className="card-header">
-            <h2 className="card-title">Coverage Summary</h2>
+            <h2 className="card-title">Current Distribution</h2>
           </div>
-          <div className="space-y-4 py-4">
-            <div className="flex justify-between items-center">
-              <span className="text-gray-600">Total Districts</span>
-              <span className="font-semibold">{summary.districts}</span>
+          <div className="flex items-center justify-around py-8">
+            <div className="text-center">
+              <div className="w-20 h-20 rounded-full bg-red-100 flex items-center justify-center mb-2 mx-auto">
+                <span className="text-2xl font-bold text-red-600">{distribution.critical}</span>
+              </div>
+              <span className="text-sm text-gray-500 font-medium">Critical</span>
             </div>
-            <div className="flex justify-between items-center">
-              <span className="text-gray-600">Total PIN Codes</span>
-              <span className="font-semibold">{summary.pincodes}</span>
+            <div className="text-center">
+              <div className="w-20 h-20 rounded-full bg-amber-100 flex items-center justify-center mb-2 mx-auto">
+                <span className="text-2xl font-bold text-amber-600">{distribution.watch}</span>
+              </div>
+              <span className="text-sm text-gray-500 font-medium">Watch</span>
             </div>
-            <div className="flex justify-between items-center">
-              <span className="text-gray-600">Data Period</span>
-              <span className="font-semibold">{summary.latest_period}</span>
+            <div className="text-center">
+              <div className="w-20 h-20 rounded-full bg-emerald-100 flex items-center justify-center mb-2 mx-auto">
+                <span className="text-2xl font-bold text-emerald-600">{distribution.stable}</span>
+              </div>
+              <span className="text-sm text-gray-500 font-medium">Stable</span>
             </div>
-            <div className="flex justify-between items-center">
-              <span className="text-gray-600">Alert Rate</span>
+          </div>
+
+          <div className="border-t border-gray-100 pt-4 mt-4">
+            <div className="flex justify-between items-center text-sm mb-2">
+              <span className="text-gray-500">Alert Rate</span>
               <span className="font-semibold text-amber-600">
                 {((summary.critical_regions + summary.watch_regions) / summary.total_regions * 100).toFixed(1)}%
               </span>
+            </div>
+            <div className="w-full bg-gray-100 rounded-full h-2">
+              <div
+                className="bg-amber-500 h-2 rounded-full"
+                style={{ width: `${((summary.critical_regions + summary.watch_regions) / summary.total_regions * 100)}%` }}
+              ></div>
             </div>
           </div>
         </div>

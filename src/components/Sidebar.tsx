@@ -5,7 +5,7 @@ import { usePathname } from 'next/navigation';
 
 const navItems = [
     {
-        label: 'National Overview',
+        label: 'Dashboard',
         href: '/',
         icon: (
             <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -14,7 +14,7 @@ const navItems = [
         ),
     },
     {
-        label: 'Mobility (MSI) Map',
+        label: 'MSI Map',
         href: '/mobility',
         icon: (
             <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -23,7 +23,7 @@ const navItems = [
         ),
     },
     {
-        label: 'Demographics',
+        label: 'Infrastructure Demand',
         href: '/demographics',
         icon: (
             <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -32,7 +32,7 @@ const navItems = [
         ),
     },
     {
-        label: 'MBU Planner',
+        label: 'MBU Operations',
         href: '/mbu-planner',
         icon: (
             <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -41,7 +41,7 @@ const navItems = [
         ),
     },
     {
-        label: 'Insights',
+        label: 'Strategic Insights',
         href: '/insights',
         icon: (
             <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -50,7 +50,7 @@ const navItems = [
         ),
     },
     {
-        label: 'Assumptions',
+        label: 'Methodology',
         href: '/assumptions',
         icon: (
             <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -90,8 +90,8 @@ export default function Sidebar() {
                                 key={item.href}
                                 href={item.href}
                                 className={`flex items-center gap-3 px-3 py-2 rounded-md transition-colors duration-200 ${isActive
-                                        ? 'bg-blue-50 text-blue-700 font-medium'
-                                        : 'text-gray-600 hover:bg-gray-100 hover:text-gray-900'
+                                    ? 'bg-blue-50 text-blue-700 font-medium'
+                                    : 'text-gray-600 hover:bg-gray-100 hover:text-gray-900'
                                     }`}
                             >
                                 <div className={`${isActive ? 'text-blue-600' : 'text-gray-400'}`}>

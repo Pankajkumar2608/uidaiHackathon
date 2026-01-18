@@ -65,13 +65,18 @@ class UIDAIDataLoader:
             # Try alternate structure (flat directory)
             dataset_path = self.base_dir / f"api_data_aadhar_{dataset_type}"
             if not dataset_path.exists():
-                raise FileNotFoundError(f"Dataset directory not found: {dataset_path}")
+                # Try double nested structure (often happens with unzip)
+                nested_path = self.base_dir / f"api_data_aadhar_{dataset_type}" / f"api_data_aadhar_{dataset_type}"
+                if nested_path.exists():
+                    dataset_path = nested_path
+                else:
+                    raise FileNotFoundError(f"Dataset directory not found: {dataset_path}")
         
         csv_files = list(dataset_path.glob("*.csv"))
         if not csv_files:
-            # Check for nested structure
+            # Check for nested structure one level deeper
             csv_files = list(dataset_path.glob("**/*.csv"))
-        
+            
         return sorted(csv_files)
     
     def load_dataset(

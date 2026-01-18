@@ -3,6 +3,7 @@
 import { useEffect, useState } from 'react';
 import DataTable from '@/components/DataTable';
 import StatusBadge from '@/components/StatusBadge';
+import IndiaMap from '@/components/IndiaMap';
 import {
     loadMetrics,
     loadStates,
@@ -10,6 +11,7 @@ import {
     MSIData,
     formatRegion,
     parseRegionKey,
+    downloadCSV,
 } from '@/lib/data';
 
 export default function MobilityMap() {
@@ -130,9 +132,9 @@ export default function MobilityMap() {
         <div className="animate-fade-in">
             {/* Header */}
             <div className="page-header">
-                <h1 className="page-title">Mobility (MSI) Map</h1>
+                <h1 className="page-title">MSI Analysis</h1>
                 <p className="page-subtitle">
-                    Migration Stress Index analysis by region • Track settlement instability signals
+                    Migration Stress Index analysis by region
                 </p>
             </div>
 
@@ -207,21 +209,33 @@ export default function MobilityMap() {
                 </div>
             </div>
 
-            {/* MSI Legend Map Placeholder */}
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-6">
+                {/* Interactive Map */}
                 <div className="lg:col-span-2 card">
-                    <div className="card-header">
+                    <div className="card-header flex justify-between items-center">
                         <h2 className="card-title">🗺️ Regional MSI Distribution</h2>
+                        {selectedState !== 'all' && (
+                            <button
+                                onClick={() => setSelectedState('all')}
+                                className="text-xs text-blue-600 hover:text-blue-800 font-medium"
+                            >
+                                Reset View
+                            </button>
+                        )}
                     </div>
-                    <div className="aspect-video bg-gradient-to-br from-blue-50 to-blue-100 rounded-lg flex items-center justify-center">
-                        <div className="text-center text-gray-500">
-                            <svg className="w-16 h-16 mx-auto mb-4 text-blue-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />
-                            </svg>
-                            <p className="text-lg font-medium">India Map Visualization</p>
-                            <p className="text-sm">Interactive state/district drilldown</p>
-                            <p className="text-xs mt-2">Color-coded by MSI classification</p>
+                    <div className="flex bg-slate-50 rounded-lg justify-center p-4">
+                        <div className="w-full max-w-md">
+                            <IndiaMap
+                                data={msiData}
+                                selectedState={selectedState === 'all' ? undefined : selectedState}
+                                onRegionSelect={(state) => setSelectedState(state)}
+                            />
                         </div>
+                    </div>
+                    <div className="mt-4 text-center">
+                        <p className="text-sm text-gray-500">
+                            Click on a state to filter the list below.
+                        </p>
                     </div>
                 </div>
 
@@ -261,7 +275,10 @@ export default function MobilityMap() {
             <div className="card">
                 <div className="card-header">
                     <h2 className="card-title">📋 All Regions ({msiData.length})</h2>
-                    <button className="btn btn-secondary text-sm">
+                    <button
+                        className="btn btn-secondary text-sm"
+                        onClick={() => downloadCSV(msiData, `mobility_msi_${selectedPeriod}.csv`)}
+                    >
                         Export CSV ↓
                     </button>
                 </div>
@@ -270,6 +287,6 @@ export default function MobilityMap() {
                     data={msiData.map((d, idx) => ({ ...d, rank: idx + 1 }))}
                 />
             </div>
-        </div>
+        </div >
     );
 }

@@ -402,10 +402,7 @@ if __name__ == "__main__":
         generate_sample_data()
     else:
         print("Running full data processing pipeline...")
-        processor = DataProcessor()
-        try:
-            processor.export_to_json()
-        except FileNotFoundError as e:
-            print(f"Dataset not found: {e}")
-            print("\nGenerating sample data instead...")
-            generate_sample_data()
+        # Assuming running from project root
+        processor = DataProcessor(base_dir=".")
+        # Ensure output dir is relative to script or base
+        processor.export_to_json(output_dir="public/data")

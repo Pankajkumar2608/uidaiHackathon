@@ -22,10 +22,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.variable} antialiased`}>
-        <div className="app-container">
+        <div className="bg-gray-50 min-h-screen">
           <Sidebar />
-          <main className="main-content">
-            {children}
+          <main className="p-8 overflow-y-auto ml-[250px]">
+            <div className="max-w-7xl mx-auto space-y-6">
+              {children}
+            </div>
           </main>
         </div>
       </body>

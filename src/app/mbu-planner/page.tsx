@@ -10,6 +10,7 @@ import {
     MBULoad,
     parseRegionKey,
     formatNumber,
+    downloadCSV,
 } from '@/lib/data';
 
 export default function MBUPlanner() {
@@ -143,9 +144,9 @@ export default function MBUPlanner() {
         <div className="animate-fade-in">
             {/* Header */}
             <div className="page-header">
-                <h1 className="page-title">MBU Operations Planner</h1>
+                <h1 className="page-title">MBU Operations</h1>
                 <p className="page-subtitle">
-                    Mandatory Biometric Update camp planning and throughput tracking
+                    Biometric update camp planning and tracking
                 </p>
             </div>
 
@@ -366,7 +367,12 @@ export default function MBUPlanner() {
             <div className="card">
                 <div className="card-header">
                     <h2 className="card-title">📋 All Regions ({mbuData.length})</h2>
-                    <button className="btn btn-secondary text-sm">Export CSV ↓</button>
+                    <button
+                        className="btn btn-secondary text-sm"
+                        onClick={() => downloadCSV(mbuData, `mbu_load_${selectedPeriod}.csv`)}
+                    >
+                        Export CSV ↓
+                    </button>
                 </div>
                 <DataTable columns={tableColumns} data={mbuData} />
             </div>

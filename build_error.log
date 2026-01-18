@@ -1,0 +1,34 @@
+
+> uidai-settlement-intelligence@0.1.0 build
+> next build
+
+⚠ Warning: Next.js inferred your workspace root, but it may not be correct.
+ We detected multiple lockfiles and selected the directory of C:\Users\ASUS\package-lock.json as the root directory.
+ To silence this warning, set `turbopack.root` in your Next.js config, or consider removing one of the lockfiles if it's not needed.
+   See https://nextjs.org/docs/app/api-reference/config/next-config-js/turbopack#root-directory for more information.
+ Detected additional lockfiles: 
+   * C:\Users\ASUS\Desktop\hacathon\package-lock.json
+
+▲ Next.js 16.1.3 (Turbopack)
+
+  Creating an optimized production build ...
+✓ Compiled successfully in 9.9s
+  Running TypeScript ...
+Failed to compile.
+
+./src/app/mobility/page.tsx:269:21
+Type error: Type '({ key: string; label: string; render: (_: any, __: any, idx: number) => number; } | { key: string; label: string; render: (_: any, row: MSIData) => Element; } | { key: string; label: string; render: (_: any, row: MSIData) => string; } | { ...; } | { ...; } | { ...; })[]' is not assignable to type 'Column[]'.
+  Type '{ key: string; label: string; render: (_: any, __: any, idx: number) => number; } | { key: string; label: string; render: (_: any, row: MSIData) => Element; } | { key: string; label: string; render: (_: any, row: MSIData) => string; } | { ...; } | { ...; } | { ...; }' is not assignable to type 'Column'.
+    Type '{ key: string; label: string; render: (_: any, __: any, idx: number) => number; }' is not assignable to type 'Column'.
+      Types of property 'render' are incompatible.
+        Type '(_: any, __: any, idx: number) => number' is not assignable to type '(value: any, row: any) => ReactNode'.
+          Target signature provides too few arguments. Expected 3 or more, but got 2.
+
+[0m [90m 267 |[39m                 [33m<[39m[33m/[39m[33mdiv[39m[33m>[39m
+ [90m 268 |[39m                 [33m<[39m[33mDataTable[39m
+[31m[1m>[22m[39m[90m 269 |[39m                     columns[33m=[39m{tableColumns}
+ [90m     |[39m                     [31m[1m^[22m[39m
+ [90m 270 |[39m                     data[33m=[39m{msiData[33m.[39mmap((d[33m,[39m idx) [33m=>[39m ({ [33m...[39md[33m,[39m rank[33m:[39m idx [33m+[39m [35m1[39m }))}
+ [90m 271 |[39m                 [33m/[39m[33m>[39m
+ [90m 272 |[39m             [33m<[39m[33m/[39m[33mdiv[39m[33m>[39m[0m
+Next.js build worker exited with code: 1 and signal: null
