@@ -1,0 +1,17 @@
+{
+  "total_regions": 10,
+  "critical_regions": 3,
+  "watch_regions": 3,
+  "stable_regions": 4,
+  "high_mbu_regions": 2,
+  "latest_period": "2025-03",
+  "states": [
+    "Karnataka",
+    "Maharashtra",
+    "Tamil Nadu",
+    "Uttar Pradesh",
+    "West Bengal"
+  ],
+  "districts": 10,
+  "pincodes": 10
+}

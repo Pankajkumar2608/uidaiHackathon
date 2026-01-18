@@ -1,0 +1,948 @@
+{
+  "msi": {
+    "2025-01": [
+      {
+        "region_key": "Maharashtra|Mumbai|400001",
+        "period": "2025-01",
+        "msi_score": 1.558,
+        "classification": "Watch",
+        "address_update_zscore": -0.925,
+        "adult_enrolment_zscore": -0.175,
+        "enrolment_decline_zscore": -0.554,
+        "consecutive_watch_periods": 0
+      },
+      {
+        "region_key": "Maharashtra|Pune|411001",
+        "period": "2025-01",
+        "msi_score": -0.894,
+        "classification": "Stable",
+        "address_update_zscore": -0.403,
+        "adult_enrolment_zscore": 0.95,
+        "enrolment_decline_zscore": 0.09,
+        "consecutive_watch_periods": 1
+      },
+      {
+        "region_key": "Karnataka|Bengaluru Urban|560001",
+        "period": "2025-01",
+        "msi_score": -0.139,
+        "classification": "Stable",
+        "address_update_zscore": 1.29,
+        "adult_enrolment_zscore": -0.693,
+        "enrolment_decline_zscore": -0.24,
+        "consecutive_watch_periods": 2
+      },
+      {
+        "region_key": "Karnataka|Mysuru|570001",
+        "period": "2025-01",
+        "msi_score": 2.318,
+        "classification": "Critical",
+        "address_update_zscore": 0.856,
+        "adult_enrolment_zscore": 1.585,
+        "enrolment_decline_zscore": 0.155,
+        "consecutive_watch_periods": 0
+      },
+      {
+        "region_key": "Tamil Nadu|Chennai|600001",
+        "period": "2025-01",
+        "msi_score": 1.543,
+        "classification": "Watch",
+        "address_update_zscore": 0.094,
+        "adult_enrolment_zscore": 0.111,
+        "enrolment_decline_zscore": -0.581,
+        "consecutive_watch_periods": 2
+      },
+      {
+        "region_key": "Tamil Nadu|Coimbatore|641001",
+        "period": "2025-01",
+        "msi_score": 0.08,
+        "classification": "Stable",
+        "address_update_zscore": 1.776,
+        "adult_enrolment_zscore": 1.064,
+        "enrolment_decline_zscore": -0.561,
+        "consecutive_watch_periods": 2
+      },
+      {
+        "region_key": "Uttar Pradesh|Lucknow|226001",
+        "period": "2025-01",
+        "msi_score": 2.772,
+        "classification": "Critical",
+        "address_update_zscore": 1.629,
+        "adult_enrolment_zscore": -0.056,
+        "enrolment_decline_zscore": 0.311,
+        "consecutive_watch_periods": 3
+      },
+      {
+        "region_key": "Uttar Pradesh|Varanasi|221001",
+        "period": "2025-01",
+        "msi_score": 0.714,
+        "classification": "Stable",
+        "address_update_zscore": 0.751,
+        "adult_enrolment_zscore": 0.086,
+        "enrolment_decline_zscore": 0.995,
+        "consecutive_watch_periods": 1
+      },
+      {
+        "region_key": "West Bengal|Kolkata|700001",
+        "period": "2025-01",
+        "msi_score": 0.526,
+        "classification": "Stable",
+        "address_update_zscore": 1.988,
+        "adult_enrolment_zscore": 0.587,
+        "enrolment_decline_zscore": 0.942,
+        "consecutive_watch_periods": 0
+      },
+      {
+        "region_key": "West Bengal|Howrah|711101",
+        "period": "2025-01",
+        "msi_score": -0.367,
+        "classification": "Stable",
+        "address_update_zscore": -0.99,
+        "adult_enrolment_zscore": 1.166,
+        "enrolment_decline_zscore": 0.439,
+        "consecutive_watch_periods": 4
+      }
+    ],
+    "2025-02": [
+      {
+        "region_key": "Maharashtra|Mumbai|400001",
+        "period": "2025-02",
+        "msi_score": 0.496,
+        "classification": "Stable",
+        "address_update_zscore": -0.515,
+        "adult_enrolment_zscore": 1.86,
+        "enrolment_decline_zscore": 0.845,
+        "consecutive_watch_periods": 0
+      },
+      {
+        "region_key": "Maharashtra|Pune|411001",
+        "period": "2025-02",
+        "msi_score": 2.512,
+        "classification": "Critical",
+        "address_update_zscore": 1.841,
+        "adult_enrolment_zscore": -0.743,
+        "enrolment_decline_zscore": -0.028,
+        "consecutive_watch_periods": 0
+      },
+      {
+        "region_key": "Karnataka|Bengaluru Urban|560001",
+        "period": "2025-02",
+        "msi_score": 1.426,
+        "classification": "Watch",
+        "address_update_zscore": 1.893,
+        "adult_enrolment_zscore": 1.787,
+        "enrolment_decline_zscore": 0.511,
+        "consecutive_watch_periods": 1
+      },
+      {
+        "region_key": "Karnataka|Mysuru|570001",
+        "period": "2025-02",
+        "msi_score": -0.744,
+        "classification": "Stable",
+        "address_update_zscore": -0.937,
+        "adult_enrolment_zscore": 0.662,
+        "enrolment_decline_zscore": 0.177,
+        "consecutive_watch_periods": 0
+      },
+      {
+        "region_key": "Tamil Nadu|Chennai|600001",
+        "period": "2025-02",
+        "msi_score": 1.676,
+        "classification": "Watch",
+        "address_update_zscore": -0.357,
+        "adult_enrolment_zscore": -0.603,
+        "enrolment_decline_zscore": 0.871,
+        "consecutive_watch_periods": 4
+      },
+      {
+        "region_key": "Tamil Nadu|Coimbatore|641001",
+        "period": "2025-02",
+        "msi_score": 0.868,
+        "classification": "Stable",
+        "address_update_zscore": 1.187,
+        "adult_enrolment_zscore": 1.02,
+        "enrolment_decline_zscore": 0.968,
+        "consecutive_watch_periods": 0
+      },
+      {
+        "region_key": "Uttar Pradesh|Lucknow|226001",
+        "period": "2025-02",
+        "msi_score": -0.266,
+        "classification": "Stable",
+        "address_update_zscore": 0.388,
+        "adult_enrolment_zscore": 1.623,
+        "enrolment_decline_zscore": -0.849,
+        "consecutive_watch_periods": 4
+      },
+      {
+        "region_key": "Uttar Pradesh|Varanasi|221001",
+        "period": "2025-02",
+        "msi_score": 0.925,
+        "classification": "Stable",
+        "address_update_zscore": 1.594,
+        "adult_enrolment_zscore": 1.707,
+        "enrolment_decline_zscore": -0.671,
+        "consecutive_watch_periods": 0
+      },
+      {
+        "region_key": "West Bengal|Kolkata|700001",
+        "period": "2025-02",
+        "msi_score": -0.129,
+        "classification": "Stable",
+        "address_update_zscore": -0.825,
+        "adult_enrolment_zscore": 1.207,
+        "enrolment_decline_zscore": -0.878,
+        "consecutive_watch_periods": 2
+      },
+      {
+        "region_key": "West Bengal|Howrah|711101",
+        "period": "2025-02",
+        "msi_score": -0.726,
+        "classification": "Stable",
+        "address_update_zscore": -0.796,
+        "adult_enrolment_zscore": 1.585,
+        "enrolment_decline_zscore": -0.192,
+        "consecutive_watch_periods": 4
+      }
+    ],
+    "2025-03": [
+      {
+        "region_key": "Maharashtra|Mumbai|400001",
+        "period": "2025-03",
+        "msi_score": -0.183,
+        "classification": "Stable",
+        "address_update_zscore": 1.149,
+        "adult_enrolment_zscore": -0.284,
+        "enrolment_decline_zscore": -0.208,
+        "consecutive_watch_periods": 2
+      },
+      {
+        "region_key": "Maharashtra|Pune|411001",
+        "period": "2025-03",
+        "msi_score": 1.024,
+        "classification": "Watch",
+        "address_update_zscore": -0.603,
+        "adult_enrolment_zscore": 0.047,
+        "enrolment_decline_zscore": -0.862,
+        "consecutive_watch_periods": 1
+      },
+      {
+        "region_key": "Karnataka|Bengaluru Urban|560001",
+        "period": "2025-03",
+        "msi_score": 1.218,
+        "classification": "Watch",
+        "address_update_zscore": 1.795,
+        "adult_enrolment_zscore": -0.689,
+        "enrolment_decline_zscore": 0.756,
+        "consecutive_watch_periods": 2
+      },
+      {
+        "region_key": "Karnataka|Mysuru|570001",
+        "period": "2025-03",
+        "msi_score": 2.412,
+        "classification": "Critical",
+        "address_update_zscore": 0.516,
+        "adult_enrolment_zscore": -0.247,
+        "enrolment_decline_zscore": 0.816,
+        "consecutive_watch_periods": 0
+      },
+      {
+        "region_key": "Tamil Nadu|Chennai|600001",
+        "period": "2025-03",
+        "msi_score": 1.207,
+        "classification": "Watch",
+        "address_update_zscore": 0.283,
+        "adult_enrolment_zscore": -0.971,
+        "enrolment_decline_zscore": -0.85,
+        "consecutive_watch_periods": 1
+      },
+      {
+        "region_key": "Tamil Nadu|Coimbatore|641001",
+        "period": "2025-03",
+        "msi_score": 2.184,
+        "classification": "Critical",
+        "address_update_zscore": 1.582,
+        "adult_enrolment_zscore": 1.697,
+        "enrolment_decline_zscore": -0.58,
+        "consecutive_watch_periods": 1
+      },
+      {
+        "region_key": "Uttar Pradesh|Lucknow|226001",
+        "period": "2025-03",
+        "msi_score": 2.905,
+        "classification": "Critical",
+        "address_update_zscore": 1.432,
+        "adult_enrolment_zscore": 1.644,
+        "enrolment_decline_zscore": -0.95,
+        "consecutive_watch_periods": 2
+      },
+      {
+        "region_key": "Uttar Pradesh|Varanasi|221001",
+        "period": "2025-03",
+        "msi_score": 0.53,
+        "classification": "Stable",
+        "address_update_zscore": -0.884,
+        "adult_enrolment_zscore": 0.412,
+        "enrolment_decline_zscore": -0.601,
+        "consecutive_watch_periods": 3
+      },
+      {
+        "region_key": "West Bengal|Kolkata|700001",
+        "period": "2025-03",
+        "msi_score": -0.722,
+        "classification": "Stable",
+        "address_update_zscore": 1.32,
+        "adult_enrolment_zscore": 0.053,
+        "enrolment_decline_zscore": 0.019,
+        "consecutive_watch_periods": 4
+      },
+      {
+        "region_key": "West Bengal|Howrah|711101",
+        "period": "2025-03",
+        "msi_score": 0.738,
+        "classification": "Stable",
+        "address_update_zscore": 1.186,
+        "adult_enrolment_zscore": -0.059,
+        "enrolment_decline_zscore": 0.212,
+        "consecutive_watch_periods": 4
+      }
+    ]
+  },
+  "demand_proxies": {
+    "2025-01": [
+      {
+        "region_key": "Maharashtra|Mumbai|400001",
+        "period": "2025-01",
+        "school_demand": 0.1707,
+        "housing_transport_demand": 0.3461,
+        "child_growth_rate": -0.0326,
+        "adult_growth_rate": 0.0555,
+        "address_intensity": 0.3149
+      },
+      {
+        "region_key": "Maharashtra|Pune|411001",
+        "period": "2025-01",
+        "school_demand": 0.0797,
+        "housing_transport_demand": 0.0391,
+        "child_growth_rate": 0.1239,
+        "adult_growth_rate": 0.1397,
+        "address_intensity": 0.3798
+      },
+      {
+        "region_key": "Karnataka|Bengaluru Urban|560001",
+        "period": "2025-01",
+        "school_demand": 0.239,
+        "housing_transport_demand": 0.2019,
+        "child_growth_rate": 0.1114,
+        "adult_growth_rate": 0.1324,
+        "address_intensity": 0.5681
+      },
+      {
+        "region_key": "Karnataka|Mysuru|570001",
+        "period": "2025-01",
+        "school_demand": -0.0817,
+        "housing_transport_demand": 0.0139,
+        "child_growth_rate": 0.0079,
+        "adult_growth_rate": -0.0301,
+        "address_intensity": 0.4164
+      },
+      {
+        "region_key": "Tamil Nadu|Chennai|600001",
+        "period": "2025-01",
+        "school_demand": 0.1807,
+        "housing_transport_demand": 0.2418,
+        "child_growth_rate": -0.0357,
+        "adult_growth_rate": 0.1087,
+        "address_intensity": 0.5671
+      },
+      {
+        "region_key": "Tamil Nadu|Coimbatore|641001",
+        "period": "2025-01",
+        "school_demand": 0.2371,
+        "housing_transport_demand": 0.288,
+        "child_growth_rate": -0.0042,
+        "adult_growth_rate": -0.042,
+        "address_intensity": 0.4577
+      },
+      {
+        "region_key": "Uttar Pradesh|Lucknow|226001",
+        "period": "2025-01",
+        "school_demand": 0.2539,
+        "housing_transport_demand": 0.2214,
+        "child_growth_rate": -0.0214,
+        "adult_growth_rate": -0.0151,
+        "address_intensity": 0.6725
+      },
+      {
+        "region_key": "Uttar Pradesh|Varanasi|221001",
+        "period": "2025-01",
+        "school_demand": 0.1038,
+        "housing_transport_demand": -0.0545,
+        "child_growth_rate": -0.0406,
+        "adult_growth_rate": -0.0226,
+        "address_intensity": 0.6137
+      },
+      {
+        "region_key": "West Bengal|Kolkata|700001",
+        "period": "2025-01",
+        "school_demand": 0.1721,
+        "housing_transport_demand": -0.0427,
+        "child_growth_rate": 0.127,
+        "adult_growth_rate": 0.1377,
+        "address_intensity": 0.6843
+      },
+      {
+        "region_key": "West Bengal|Howrah|711101",
+        "period": "2025-01",
+        "school_demand": 0.2048,
+        "housing_transport_demand": 0.1538,
+        "child_growth_rate": -0.0287,
+        "adult_growth_rate": 0.1063,
+        "address_intensity": 0.7208
+      }
+    ],
+    "2025-02": [
+      {
+        "region_key": "Maharashtra|Mumbai|400001",
+        "period": "2025-02",
+        "school_demand": 0.1396,
+        "housing_transport_demand": 0.1443,
+        "child_growth_rate": -0.0276,
+        "adult_growth_rate": 0.0407,
+        "address_intensity": 0.7927
+      },
+      {
+        "region_key": "Maharashtra|Pune|411001",
+        "period": "2025-02",
+        "school_demand": 0.2912,
+        "housing_transport_demand": 0.1664,
+        "child_growth_rate": -0.0248,
+        "adult_growth_rate": 0.1149,
+        "address_intensity": 0.7734
+      },
+      {
+        "region_key": "Karnataka|Bengaluru Urban|560001",
+        "period": "2025-02",
+        "school_demand": 0.1852,
+        "housing_transport_demand": 0.0995,
+        "child_growth_rate": 0.0843,
+        "adult_growth_rate": 0.0434,
+        "address_intensity": 0.7498
+      },
+      {
+        "region_key": "Karnataka|Mysuru|570001",
+        "period": "2025-02",
+        "school_demand": -0.0716,
+        "housing_transport_demand": 0.2156,
+        "child_growth_rate": -0.0042,
+        "adult_growth_rate": 0.1764,
+        "address_intensity": 0.7298
+      },
+      {
+        "region_key": "Tamil Nadu|Chennai|600001",
+        "period": "2025-02",
+        "school_demand": 0.1305,
+        "housing_transport_demand": 0.0215,
+        "child_growth_rate": 0.0446,
+        "adult_growth_rate": 0.0518,
+        "address_intensity": 0.3472
+      },
+      {
+        "region_key": "Tamil Nadu|Coimbatore|641001",
+        "period": "2025-02",
+        "school_demand": -0.0758,
+        "housing_transport_demand": 0.2641,
+        "child_growth_rate": 0.1101,
+        "adult_growth_rate": -0.0227,
+        "address_intensity": 0.3958
+      },
+      {
+        "region_key": "Uttar Pradesh|Lucknow|226001",
+        "period": "2025-02",
+        "school_demand": -0.0608,
+        "housing_transport_demand": 0.2261,
+        "child_growth_rate": 0.0581,
+        "adult_growth_rate": -0.0463,
+        "address_intensity": 0.3466
+      },
+      {
+        "region_key": "Uttar Pradesh|Varanasi|221001",
+        "period": "2025-02",
+        "school_demand": 0.2941,
+        "housing_transport_demand": 0.0326,
+        "child_growth_rate": 0.1068,
+        "adult_growth_rate": 0.0638,
+        "address_intensity": 0.5115
+      },
+      {
+        "region_key": "West Bengal|Kolkata|700001",
+        "period": "2025-02",
+        "school_demand": -0.0771,
+        "housing_transport_demand": 0.1921,
+        "child_growth_rate": 0.0506,
+        "adult_growth_rate": 0.1632,
+        "address_intensity": 0.3787
+      },
+      {
+        "region_key": "West Bengal|Howrah|711101",
+        "period": "2025-02",
+        "school_demand": -0.0015,
+        "housing_transport_demand": 0.1973,
+        "child_growth_rate": 0.0739,
+        "adult_growth_rate": 0.0548,
+        "address_intensity": 0.5918
+      }
+    ],
+    "2025-03": [
+      {
+        "region_key": "Maharashtra|Mumbai|400001",
+        "period": "2025-03",
+        "school_demand": 0.0829,
+        "housing_transport_demand": 0.3645,
+        "child_growth_rate": 0.1371,
+        "adult_growth_rate": -0.0477,
+        "address_intensity": 0.6106
+      },
+      {
+        "region_key": "Maharashtra|Pune|411001",
+        "period": "2025-03",
+        "school_demand": 0.0478,
+        "housing_transport_demand": -0.0211,
+        "child_growth_rate": 0.1167,
+        "adult_growth_rate": 0.1259,
+        "address_intensity": 0.6058
+      },
+      {
+        "region_key": "Karnataka|Bengaluru Urban|560001",
+        "period": "2025-03",
+        "school_demand": -0.0538,
+        "housing_transport_demand": -0.0465,
+        "child_growth_rate": 0.0606,
+        "adult_growth_rate": 0.0181,
+        "address_intensity": 0.6024
+      },
+      {
+        "region_key": "Karnataka|Mysuru|570001",
+        "period": "2025-03",
+        "school_demand": -0.0631,
+        "housing_transport_demand": 0.1118,
+        "child_growth_rate": 0.0053,
+        "adult_growth_rate": -0.0491,
+        "address_intensity": 0.6856
+      },
+      {
+        "region_key": "Tamil Nadu|Chennai|600001",
+        "period": "2025-03",
+        "school_demand": 0.1182,
+        "housing_transport_demand": 0.3173,
+        "child_growth_rate": 0.0665,
+        "adult_growth_rate": -0.013,
+        "address_intensity": 0.3637
+      },
+      {
+        "region_key": "Tamil Nadu|Coimbatore|641001",
+        "period": "2025-03",
+        "school_demand": 0.1668,
+        "housing_transport_demand": 0.0768,
+        "child_growth_rate": 0.062,
+        "adult_growth_rate": 0.1687,
+        "address_intensity": 0.7869
+      },
+      {
+        "region_key": "Uttar Pradesh|Lucknow|226001",
+        "period": "2025-03",
+        "school_demand": 0.213,
+        "housing_transport_demand": 0.1059,
+        "child_growth_rate": 0.084,
+        "adult_growth_rate": 0.1338,
+        "address_intensity": 0.4241
+      },
+      {
+        "region_key": "Uttar Pradesh|Varanasi|221001",
+        "period": "2025-03",
+        "school_demand": 0.0399,
+        "housing_transport_demand": 0.3103,
+        "child_growth_rate": 0.1243,
+        "adult_growth_rate": 0.0057,
+        "address_intensity": 0.63
+      },
+      {
+        "region_key": "West Bengal|Kolkata|700001",
+        "period": "2025-03",
+        "school_demand": 0.0325,
+        "housing_transport_demand": -0.0862,
+        "child_growth_rate": 0.1254,
+        "adult_growth_rate": 0.0153,
+        "address_intensity": 0.5903
+      },
+      {
+        "region_key": "West Bengal|Howrah|711101",
+        "period": "2025-03",
+        "school_demand": -0.0537,
+        "housing_transport_demand": 0.3498,
+        "child_growth_rate": -0.012,
+        "adult_growth_rate": -0.0389,
+        "address_intensity": 0.518
+      }
+    ]
+  },
+  "mbu_load": {
+    "2025-01": [
+      {
+        "region_key": "Maharashtra|Mumbai|400001",
+        "period": "2025-01",
+        "total_mbu_load": 2291,
+        "age_5_17_load": 676,
+        "backlog_signal": 0.104,
+        "priority_rank": 1
+      },
+      {
+        "region_key": "Maharashtra|Pune|411001",
+        "period": "2025-01",
+        "total_mbu_load": 3962,
+        "age_5_17_load": 896,
+        "backlog_signal": -0.078,
+        "priority_rank": 2
+      },
+      {
+        "region_key": "Karnataka|Bengaluru Urban|560001",
+        "period": "2025-01",
+        "total_mbu_load": 3600,
+        "age_5_17_load": 361,
+        "backlog_signal": 0.142,
+        "priority_rank": 3
+      },
+      {
+        "region_key": "Karnataka|Mysuru|570001",
+        "period": "2025-01",
+        "total_mbu_load": 1327,
+        "age_5_17_load": 978,
+        "backlog_signal": -0.078,
+        "priority_rank": 4
+      },
+      {
+        "region_key": "Tamil Nadu|Chennai|600001",
+        "period": "2025-01",
+        "total_mbu_load": 2505,
+        "age_5_17_load": 534,
+        "backlog_signal": 0.07,
+        "priority_rank": 5
+      },
+      {
+        "region_key": "Tamil Nadu|Coimbatore|641001",
+        "period": "2025-01",
+        "total_mbu_load": 2693,
+        "age_5_17_load": 335,
+        "backlog_signal": -0.131,
+        "priority_rank": 6
+      },
+      {
+        "region_key": "Uttar Pradesh|Lucknow|226001",
+        "period": "2025-01",
+        "total_mbu_load": 4915,
+        "age_5_17_load": 738,
+        "backlog_signal": 0.298,
+        "priority_rank": 7
+      },
+      {
+        "region_key": "Uttar Pradesh|Varanasi|221001",
+        "period": "2025-01",
+        "total_mbu_load": 3958,
+        "age_5_17_load": 1421,
+        "backlog_signal": -0.249,
+        "priority_rank": 8
+      },
+      {
+        "region_key": "West Bengal|Kolkata|700001",
+        "period": "2025-01",
+        "total_mbu_load": 3286,
+        "age_5_17_load": 428,
+        "backlog_signal": -0.065,
+        "priority_rank": 9
+      },
+      {
+        "region_key": "West Bengal|Howrah|711101",
+        "period": "2025-01",
+        "total_mbu_load": 4658,
+        "age_5_17_load": 1447,
+        "backlog_signal": -0.141,
+        "priority_rank": 10
+      }
+    ],
+    "2025-02": [
+      {
+        "region_key": "Maharashtra|Mumbai|400001",
+        "period": "2025-02",
+        "total_mbu_load": 3019,
+        "age_5_17_load": 690,
+        "backlog_signal": -0.254,
+        "priority_rank": 1
+      },
+      {
+        "region_key": "Maharashtra|Pune|411001",
+        "period": "2025-02",
+        "total_mbu_load": 1852,
+        "age_5_17_load": 742,
+        "backlog_signal": 0.122,
+        "priority_rank": 2
+      },
+      {
+        "region_key": "Karnataka|Bengaluru Urban|560001",
+        "period": "2025-02",
+        "total_mbu_load": 4198,
+        "age_5_17_load": 447,
+        "backlog_signal": -0.102,
+        "priority_rank": 3
+      },
+      {
+        "region_key": "Karnataka|Mysuru|570001",
+        "period": "2025-02",
+        "total_mbu_load": 1080,
+        "age_5_17_load": 1252,
+        "backlog_signal": -0.11,
+        "priority_rank": 4
+      },
+      {
+        "region_key": "Tamil Nadu|Chennai|600001",
+        "period": "2025-02",
+        "total_mbu_load": 4031,
+        "age_5_17_load": 925,
+        "backlog_signal": 0.039,
+        "priority_rank": 5
+      },
+      {
+        "region_key": "Tamil Nadu|Coimbatore|641001",
+        "period": "2025-02",
+        "total_mbu_load": 4893,
+        "age_5_17_load": 1118,
+        "backlog_signal": -0.188,
+        "priority_rank": 6
+      },
+      {
+        "region_key": "Uttar Pradesh|Lucknow|226001",
+        "period": "2025-02",
+        "total_mbu_load": 2436,
+        "age_5_17_load": 540,
+        "backlog_signal": 0.025,
+        "priority_rank": 7
+      },
+      {
+        "region_key": "Uttar Pradesh|Varanasi|221001",
+        "period": "2025-02",
+        "total_mbu_load": 4486,
+        "age_5_17_load": 517,
+        "backlog_signal": -0.148,
+        "priority_rank": 8
+      },
+      {
+        "region_key": "West Bengal|Kolkata|700001",
+        "period": "2025-02",
+        "total_mbu_load": 4660,
+        "age_5_17_load": 364,
+        "backlog_signal": 0.381,
+        "priority_rank": 9
+      },
+      {
+        "region_key": "West Bengal|Howrah|711101",
+        "period": "2025-02",
+        "total_mbu_load": 4782,
+        "age_5_17_load": 847,
+        "backlog_signal": 0.448,
+        "priority_rank": 10
+      }
+    ],
+    "2025-03": [
+      {
+        "region_key": "Maharashtra|Mumbai|400001",
+        "period": "2025-03",
+        "total_mbu_load": 1319,
+        "age_5_17_load": 350,
+        "backlog_signal": 0.13,
+        "priority_rank": 1
+      },
+      {
+        "region_key": "Maharashtra|Pune|411001",
+        "period": "2025-03",
+        "total_mbu_load": 4833,
+        "age_5_17_load": 216,
+        "backlog_signal": 0.234,
+        "priority_rank": 2
+      },
+      {
+        "region_key": "Karnataka|Bengaluru Urban|560001",
+        "period": "2025-03",
+        "total_mbu_load": 3308,
+        "age_5_17_load": 616,
+        "backlog_signal": 0.25,
+        "priority_rank": 3
+      },
+      {
+        "region_key": "Karnataka|Mysuru|570001",
+        "period": "2025-03",
+        "total_mbu_load": 2645,
+        "age_5_17_load": 530,
+        "backlog_signal": 0.293,
+        "priority_rank": 4
+      },
+      {
+        "region_key": "Tamil Nadu|Chennai|600001",
+        "period": "2025-03",
+        "total_mbu_load": 3025,
+        "age_5_17_load": 946,
+        "backlog_signal": 0.419,
+        "priority_rank": 5
+      },
+      {
+        "region_key": "Tamil Nadu|Coimbatore|641001",
+        "period": "2025-03",
+        "total_mbu_load": 1766,
+        "age_5_17_load": 684,
+        "backlog_signal": 0.392,
+        "priority_rank": 6
+      },
+      {
+        "region_key": "Uttar Pradesh|Lucknow|226001",
+        "period": "2025-03",
+        "total_mbu_load": 1804,
+        "age_5_17_load": 1812,
+        "backlog_signal": 0.261,
+        "priority_rank": 7
+      },
+      {
+        "region_key": "Uttar Pradesh|Varanasi|221001",
+        "period": "2025-03",
+        "total_mbu_load": 3764,
+        "age_5_17_load": 872,
+        "backlog_signal": -0.077,
+        "priority_rank": 8
+      },
+      {
+        "region_key": "West Bengal|Kolkata|700001",
+        "period": "2025-03",
+        "total_mbu_load": 2674,
+        "age_5_17_load": 278,
+        "backlog_signal": -0.213,
+        "priority_rank": 9
+      },
+      {
+        "region_key": "West Bengal|Howrah|711101",
+        "period": "2025-03",
+        "total_mbu_load": 4759,
+        "age_5_17_load": 1851,
+        "backlog_signal": 0.131,
+        "priority_rank": 10
+      }
+    ]
+  },
+  "insights_by_state": {
+    "Uttar Pradesh": {
+      "2025-03": [
+        {
+          "indicator": "MSI (Watch)",
+          "region": "Sample District, Uttar Pradesh",
+          "evidence": "MSI=1.5, 2 consecutive periods",
+          "action": "Monitor settlement patterns",
+          "department": "Labour/Welfare",
+          "impact": "Medium",
+          "confidence": 0.65
+        },
+        {
+          "indicator": "School Demand Proxy",
+          "region": "Sample District, Uttar Pradesh",
+          "evidence": "Child growth=12%, Adult settlement gain detected",
+          "action": "Assess school infrastructure capacity",
+          "department": "Education",
+          "impact": "Medium",
+          "confidence": 0.7
+        }
+      ]
+    },
+    "Karnataka": {
+      "2025-03": [
+        {
+          "indicator": "MSI (Watch)",
+          "region": "Sample District, Karnataka",
+          "evidence": "MSI=1.5, 2 consecutive periods",
+          "action": "Monitor settlement patterns",
+          "department": "Labour/Welfare",
+          "impact": "Medium",
+          "confidence": 0.65
+        },
+        {
+          "indicator": "School Demand Proxy",
+          "region": "Sample District, Karnataka",
+          "evidence": "Child growth=12%, Adult settlement gain detected",
+          "action": "Assess school infrastructure capacity",
+          "department": "Education",
+          "impact": "Medium",
+          "confidence": 0.7
+        }
+      ]
+    },
+    "West Bengal": {
+      "2025-03": [
+        {
+          "indicator": "MSI (Watch)",
+          "region": "Sample District, West Bengal",
+          "evidence": "MSI=1.5, 2 consecutive periods",
+          "action": "Monitor settlement patterns",
+          "department": "Labour/Welfare",
+          "impact": "Medium",
+          "confidence": 0.65
+        },
+        {
+          "indicator": "School Demand Proxy",
+          "region": "Sample District, West Bengal",
+          "evidence": "Child growth=12%, Adult settlement gain detected",
+          "action": "Assess school infrastructure capacity",
+          "department": "Education",
+          "impact": "Medium",
+          "confidence": 0.7
+        }
+      ]
+    },
+    "Maharashtra": {
+      "2025-03": [
+        {
+          "indicator": "MSI (Watch)",
+          "region": "Sample District, Maharashtra",
+          "evidence": "MSI=1.5, 2 consecutive periods",
+          "action": "Monitor settlement patterns",
+          "department": "Labour/Welfare",
+          "impact": "Medium",
+          "confidence": 0.65
+        },
+        {
+          "indicator": "School Demand Proxy",
+          "region": "Sample District, Maharashtra",
+          "evidence": "Child growth=12%, Adult settlement gain detected",
+          "action": "Assess school infrastructure capacity",
+          "department": "Education",
+          "impact": "Medium",
+          "confidence": 0.7
+        }
+      ]
+    },
+    "Tamil Nadu": {
+      "2025-03": [
+        {
+          "indicator": "MSI (Watch)",
+          "region": "Sample District, Tamil Nadu",
+          "evidence": "MSI=1.5, 2 consecutive periods",
+          "action": "Monitor settlement patterns",
+          "department": "Labour/Welfare",
+          "impact": "Medium",
+          "confidence": 0.65
+        },
+        {
+          "indicator": "School Demand Proxy",
+          "region": "Sample District, Tamil Nadu",
+          "evidence": "Child growth=12%, Adult settlement gain detected",
+          "action": "Assess school infrastructure capacity",
+          "department": "Education",
+          "impact": "Medium",
+          "confidence": 0.7
+        }
+      ]
+    }
+  }
+}
