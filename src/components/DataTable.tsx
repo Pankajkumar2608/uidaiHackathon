@@ -3,7 +3,7 @@ import StatusBadge from './StatusBadge';
 interface Column {
     key: string;
     label: string;
-    render?: (value: any, row: any) => React.ReactNode;
+    render?: (value: any, row: any, index: number) => React.ReactNode;
 }
 
 interface DataTableProps {
@@ -33,7 +33,7 @@ export default function DataTable({ columns, data, onRowClick }: DataTableProps)
                             {columns.map((col) => (
                                 <td key={col.key}>
                                     {col.render
-                                        ? col.render(row[col.key], row)
+                                        ? col.render(row[col.key], row, idx)
                                         : col.key === 'classification'
                                             ? <StatusBadge status={row[col.key]} />
                                             : row[col.key]}
