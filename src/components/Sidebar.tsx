@@ -66,50 +66,56 @@ export default function Sidebar() {
     return (
         <aside className="sidebar">
             {/* Logo */}
-            <div className="p-6 border-b border-white/10">
+            <div className="p-6 border-b border-gray-200">
                 <div className="flex items-center gap-3">
-                    <div className="w-10 h-10 bg-white/20 rounded-lg flex items-center justify-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <div className="w-8 h-8 bg-blue-600 rounded flex items-center justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />
                         </svg>
                     </div>
                     <div>
-                        <h1 className="text-lg font-bold text-white">UIDAI</h1>
-                        <p className="text-xs text-blue-200">Settlement Intelligence</p>
+                        <h1 className="text-base font-bold text-gray-900 leading-tight">UIDAI</h1>
+                        <p className="text-[10px] text-gray-500 uppercase tracking-wider">Settlement Intel</p>
                     </div>
                 </div>
             </div>
 
             {/* Navigation */}
             <nav className="p-4">
-                <ul className="space-y-1">
+                <div className="space-y-1">
                     {navItems.map((item) => {
                         const isActive = pathname === item.href;
                         return (
-                            <li key={item.href}>
-                                <Link
-                                    href={item.href}
-                                    className={`flex items-center gap-3 px-4 py-3 rounded-lg transition-all duration-200 ${isActive
-                                            ? 'bg-white/20 text-white'
-                                            : 'text-blue-100 hover:bg-white/10 hover:text-white'
-                                        }`}
-                                >
+                            <Link
+                                key={item.href}
+                                href={item.href}
+                                className={`flex items-center gap-3 px-3 py-2 rounded-md transition-colors duration-200 ${isActive
+                                        ? 'bg-blue-50 text-blue-700 font-medium'
+                                        : 'text-gray-600 hover:bg-gray-100 hover:text-gray-900'
+                                    }`}
+                            >
+                                <div className={`${isActive ? 'text-blue-600' : 'text-gray-400'}`}>
                                     {item.icon}
-                                    <span className="text-sm font-medium">{item.label}</span>
-                                </Link>
-                            </li>
+                                </div>
+                                <span className="text-sm">{item.label}</span>
+                            </Link>
                         );
                     })}
-                </ul>
+                </div>
             </nav>
 
-            {/* Compliance Notice */}
-            <div className="absolute bottom-0 left-0 right-0 p-4 border-t border-white/10">
-                <div className="bg-yellow-500/20 rounded-lg p-3">
-                    <p className="text-xs text-yellow-100 leading-relaxed">
-                        <strong className="block text-yellow-200 mb-1">⚠️ Proxy Data Only</strong>
-                        All metrics are aggregated proxies. No individual tracking.
-                    </p>
+            {/* Compliance Notice (Simplified) */}
+            <div className="absolute bottom-0 left-0 right-0 p-4 border-t border-gray-200 bg-gray-50">
+                <div className="flex items-start gap-2">
+                    <svg className="w-4 h-4 text-amber-500 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    <div>
+                        <p className="text-xs font-medium text-gray-700">Proxy Data Only</p>
+                        <p className="text-[10px] text-gray-500 leading-tight mt-0.5">
+                            Aggregated indicators. No individual tracking.
+                        </p>
+                    </div>
                 </div>
             </div>
         </aside>
